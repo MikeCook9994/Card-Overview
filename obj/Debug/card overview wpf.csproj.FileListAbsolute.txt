@@ -1,0 +1,30 @@
+D:\cook\Documents\projects\Card-Overview\bin\Debug\Card Overview.exe.config
+D:\cook\Documents\projects\Card-Overview\obj\Debug\card overview wpf.csprojResolveAssemblyReference.cache
+D:\cook\Documents\projects\Card-Overview\obj\Debug\About.g.cs
+D:\cook\Documents\projects\Card-Overview\obj\Debug\ButtonControl.g.cs
+D:\cook\Documents\projects\Card-Overview\obj\Debug\CardView.g.cs
+D:\cook\Documents\projects\Card-Overview\obj\Debug\CardWindow.g.cs
+D:\cook\Documents\projects\Card-Overview\obj\Debug\MainWindow.g.cs
+D:\cook\Documents\projects\Card-Overview\obj\Debug\SearchBox.g.cs
+D:\cook\Documents\projects\Card-Overview\obj\Debug\Settings.g.cs
+D:\cook\Documents\projects\Card-Overview\obj\Debug\App.g.cs
+D:\cook\Documents\projects\Card-Overview\obj\Debug\Card Overview_MarkupCompile.cache
+D:\cook\Documents\projects\Card-Overview\obj\Debug\Card Overview_MarkupCompile.lref
+D:\cook\Documents\projects\Card-Overview\bin\Debug\Card Overview.exe
+D:\cook\Documents\projects\Card-Overview\bin\Debug\Card Overview.pdb
+D:\cook\Documents\projects\Card-Overview\bin\Debug\CsvHelper.dll
+D:\cook\Documents\projects\Card-Overview\bin\Debug\CsvHelper.xml
+D:\cook\Documents\projects\Card-Overview\obj\Debug\About.baml
+D:\cook\Documents\projects\Card-Overview\obj\Debug\ButtonControl.baml
+D:\cook\Documents\projects\Card-Overview\obj\Debug\CardView.baml
+D:\cook\Documents\projects\Card-Overview\obj\Debug\CardWindow.baml
+D:\cook\Documents\projects\Card-Overview\obj\Debug\MainWindow.baml
+D:\cook\Documents\projects\Card-Overview\obj\Debug\SearchBox.baml
+D:\cook\Documents\projects\Card-Overview\obj\Debug\Settings.baml
+D:\cook\Documents\projects\Card-Overview\obj\Debug\Card Overview.g.resources
+D:\cook\Documents\projects\Card-Overview\obj\Debug\card_overview_wpf.Properties.Resources.resources
+D:\cook\Documents\projects\Card-Overview\obj\Debug\card overview wpf.csproj.GenerateResource.Cache
+D:\cook\Documents\projects\Card-Overview\obj\Debug\Card Overview.exe
+D:\cook\Documents\projects\Card-Overview\obj\Debug\Card Overview.pdb
+D:\cook\Documents\projects\Card-Overview\bin\Debug\fm-cards.csv
+D:\cook\Documents\projects\Card-Overview\bin\Debug\settings.dat

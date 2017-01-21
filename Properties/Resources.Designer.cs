@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace card_overview_wpf.Properties
-{
-
-
+namespace card_overview_wpf.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -22,49 +22,64 @@ namespace card_overview_wpf.Properties
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("card_overview_wpf.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to id,name,cardtype,type
+        ///1,Blue-eyes White Dragon,Monster,Dragon
+        ///2,Mystical Elf,Monster,Spellcaster
+        ///3,Hitotsu-me Giant,Monster,Beast-Warrior
+        ///4,Baby Dragon,Monster,Dragon
+        ///5,Ryu-kishin,Monster,Fiend
+        ///6,Feral Imp,Monster,Fiend
+        ///7,Winged Dragon #1,Monster,Dragon
+        ///8,Mushroom Man,Monster,Plant
+        ///9,Shadow Specter,Monster,Zombie
+        ///10,Blackland Fire Dragon,Monster,Dragon
+        ///11,Sword Arm of Dragon,Monster,Dinosaur
+        ///12,Swamp Battleguard,Monster,Warrior
+        ///13,Tyhone,Monster,Winged Beast
+        ///14,Battle Steer,Monster,Beast-Warri [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string fm_cards {
+            get {
+                return ResourceManager.GetString("fm_cards", resourceCulture);
             }
         }
     }

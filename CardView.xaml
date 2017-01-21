@@ -7,13 +7,14 @@
              mc:Ignorable="d" 
              d:DesignHeight="100" d:DesignWidth="100" >
     <Grid Background="Transparent">
-        <Grid.ContextMenu>
+        <!--<Grid.ContextMenu>
             <ContextMenu>
                 <MenuItem Header="Select Image" Click="MenuItem_Click" />
                 <MenuItem Header="Toggle Visible" Click="MenuItem_Click_1" />
             </ContextMenu>
-        </Grid.ContextMenu>
-        <Image x:Name="imageCard" Height="100" Width="100" Stretch="Fill" />
-        <TextBox x:Name="textBoxCount" Margin="65,65,0,0" Text="0" BorderThickness="2,1,1,1" TextWrapping="Wrap" IsReadOnly="True" TextAlignment="Center" FontSize="21.333"/>
+        </Grid.ContextMenu>-->
+        <Image x:Name="imageCard" Height="100" Width="100" Stretch="Fill" MouseLeftButtonUp="OnClick_Increment" MouseRightButtonUp="OnClick_Decrement"/>
+        <TextBox x:Name="textBoxCount" Background="Black" Foreground="White" BorderBrush="White" Margin="66,66,0,0" Text="0" BorderThickness="1,1,1,1" TextWrapping="Wrap" IsReadOnly="True" TextAlignment="Center" VerticalContentAlignment="Center" FontSize="21.333"/>
     </Grid>
 </UserControl>
+ 

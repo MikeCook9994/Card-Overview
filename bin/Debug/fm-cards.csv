@@ -1,0 +1,725 @@
+﻿id,name,cardtype,type
+1,Blue-eyes White Dragon,Monster,Dragon
+2,Mystical Elf,Monster,Spellcaster
+3,Hitotsu-me Giant,Monster,Beast-Warrior
+4,Baby Dragon,Monster,Dragon
+5,Ryu-kishin,Monster,Fiend
+6,Feral Imp,Monster,Fiend
+7,Winged Dragon #1,Monster,Dragon
+8,Mushroom Man,Monster,Plant
+9,Shadow Specter,Monster,Zombie
+10,Blackland Fire Dragon,Monster,Dragon
+11,Sword Arm of Dragon,Monster,Dinosaur
+12,Swamp Battleguard,Monster,Warrior
+13,Tyhone,Monster,Winged Beast
+14,Battle Steer,Monster,Beast-Warrior
+15,Flame Swordsman,Monster,Warrior
+16,Time Wizard,Monster,Spellcaster
+17,Right Leg of the Forbidden One,Monster,Spellcaster
+18,Left Leg of the Forbidden One,Monster,Spellcaster
+19,Right Arm of the Forbidden One,Monster,Spellcaster
+20,Left Arm of the Forbidden One,Monster,Spellcaster
+21,Exodia the Forbidden,Monster,Spellcaster
+22,Summoned Skull,Monster,Fiend
+23,The Wicked Worm Beast,Monster,Beast
+24,Skull Servant,Monster,Zombie
+25,Horn Imp,Monster,Fiend
+26,Battle Ox,Monster,Beast-Warrior
+27,Beaver Warrior,Monster,Beast-Warrior
+28,Rock Ogre Grotto #1,Monster,Rock
+29,Mountain Warrior,Monster,Beast-Warrior
+30,Zombie Warrior,Monster,Zombie
+31,Koumori Dragon,Monster,Dragon
+32,Two-headed King Rex,Monster,Dinosaur
+33,Judge Man,Monster,Warrior
+34,Saggi the Dark Clown,Monster,Spellcaster
+35,Dark Magician,Monster,Spellcaster
+36,The Snake Hair,Monster,Zombie
+37,Gaia the Dragon Champion,Monster,Dragon
+38,Gaia the Fierce Knight,Monster,Warrior
+39,Curse of Dragon,Monster,Dragon
+40,Dragon Piper,Monster,Pyro
+41,Celtic Guardian,Monster,Warrior
+42,Illusionist Faceless Mage,Monster,Spellcaster
+43,Karbonala Warrior,Monster,Warrior
+44,Rogue Doll,Monster,Spellcaster
+45,Oscillo Hero #2,Monster,Thunder
+46,Griffore,Monster,Beast
+47,Torike,Monster,Beast
+48,Sangan,Monster,Fiend
+49,Big Insect,Monster,Insect
+50,Basic Insect,Monster,Insect
+51,Armored Lizard,Monster,Reptile
+52,Hercules Beetle,Monster,Insect
+53,Killer Needle,Monster,Insect
+54,Gokibore,Monster,Insect
+55,Giant Flea,Monster,Insect
+56,Larvae Moth,Monster,Insect
+57,Great Moth,Monster,Insect
+58,Kuriboh,Monster,Fiend
+59,Mammoth Graveyard,Monster,Dinosaur
+60,Great White,Monster,Fish
+61,Wolf,Monster,Beast
+62,Harpie Lady,Monster,Winged Beast
+63,Harpie Lady Sisters,Monster,Winged Beast
+64,Tiger Axe,Monster,Beast-Warrior
+65,Silver Fang,Monster,Beast
+66,Kojikocy,Monster,Warrior
+67,Perfectly Ultimate Great Moth,Monster,Insect
+68,Garoozis,Monster,Beast-Warrior
+69,Thousand Dragon,Monster,Dragon
+70,Fiend Kraken,Monster,Aqua
+71,Jellyfish,Monster,Aqua
+72,Cocoon of Evolution,Monster,Insect
+73,Kairyu-Shin,Monster,Sea Serpent
+74,Giant Soldier of Stone,Monster,Rock
+75,Man-eating Plant,Monster,Plant
+76,Krokodilus,Monster,Reptile
+77,Grappler,Monster,Reptile
+78,Axe Raider,Monster,Warrior
+79,Megazowler,Monster,Dinosaur
+80,Uraby,Monster,Dinosaur
+81,Crawling Dragon #2,Monster,Dinosaur
+82,Red-eyes B. Dragon,Monster,Dragon
+83,Castle of Dark Illusions,Monster,Fiend
+84,Reaper of the Cards,Monster,Fiend
+85,King of Yamimakai,Monster,Fiend
+86,Barox,Monster,Fiend
+87,Dark Chimera,Monster,Fiend
+88,Metal Guardian,Monster,Fiend
+89,Catapult Turtle,Monster,Aqua
+90,Gyakutenno Megami,Monster,Fairy
+91,Mystic Horseman,Monster,Beast
+92,Rabid Horseman,Monster,Beast-Warrior
+93,Zanki,Monster,Warrior
+94,Crawling Dragon,Monster,Dragon
+95,Crass Clown,Monster,Fiend
+96,Armored Zombie,Monster,Zombie
+97,Dragon Zombie,Monster,Zombie
+98,Clown Zombie,Monster,Zombie
+99,Pumpking the King of Ghosts,Monster,Zombie
+100,Battle Warrior,Monster,Warrior
+101,Wings of Wicked Flame,Monster,Pyro
+102,Mask of Darkness,Monster,Fiend
+103,Job-Change Mirror,Monster,Fiend
+104,Curtain of the Dark Ones,Monster,Spellcaster
+105,Tomozaurus,Monster,Dinosaur
+106,Spirit of the Winds,Monster,Spellcaster
+107,Kageningen,Monster,Warrior
+108,Graveyard and the Hand of Invitation,Monster,Zombie
+109,Goddess with the Third Eye,Monster,Fairy
+110,Hero of the East,Monster,Warrior
+111,Doma The Angel of Silence,Monster,Fairy
+112,That Which Feeds on Life,Monster,Fiend
+113,Dark Gray,Monster,Beast
+114,White Magical Hat,Monster,Spellcaster
+115,Kamion Wizard,Monster,Spellcaster
+116,Nightmare Scorpion,Monster,Insect
+117,Spirit of the Books,Monster,Winged Beast
+118,Supporter in the Shadows,Monster,Warrior
+119,Trial of Nightmares,Monster,Fiend
+120,Dream Clown,Monster,Warrior
+121,Sleeping Lion,Monster,Beast
+122,Yamatano Dragon Scroll,Monster,Dragon
+123,Dark Plant,Monster,Plant
+124,Ancient Tool,Monster,Machine
+125,Faith Bird,Monster,Winged Beast
+126,Orion the Battle King,Monster,Fairy
+127,Ansatsu,Monster,Warrior
+128,LaMoon,Monster,Spellcaster
+129,Nemuriko,Monster,Spellcaster
+130,Weather Control,Monster,Fairy
+131,Octoberser,Monster,Aqua
+132,The 13th Grave,Monster,Zombie
+133,Charubin the Fire Knight,Monster,Pyro
+134,Mystical Capture Chain,Monster,Fairy
+135,Fiend's Hand,Monster,Zombie
+136,Witty Phantom,Monster,Fiend
+137,Mystery Hand,Monster,Fiend
+138,Dragon Statue,Monster,Warrior
+139,Blue-eyed Silver Zombie,Monster,Zombie
+140,Toad Master,Monster,Aqua
+141,Spiked Snail,Monster,Insect
+142,Flame Manipulator,Monster,Spellcaster
+143,Necrolancer the Timelord,Monster,Spellcaster
+144,Djinn the Watcher of the Wind,Monster,Spellcaster
+145,The Bewitching Phantom Thief,Monster,Spellcaster
+146,Temple of Skulls,Monster,Zombie
+147,Monster Egg,Monster,Warrior
+148,The Shadow Who Controls the Dark,Monster,Fiend
+149,Lord of the Lamp,Monster,Fiend
+150,Akihiron,Monster,Aqua
+151,Rhaimundos of the Red Sword,Monster,Warrior
+152,The Melting Red Shadow,Monster,Aqua
+153,Dokuroizo the Grim Reaper,Monster,Zombie
+154,Fire Reaper,Monster,Zombie
+155,Larvas,Monster,Beast
+156,Hard Armor,Monster,Warrior
+157,Firegrass,Monster,Plant
+158,Man Eater,Monster,Plant
+159,Dig Beak,Monster,Beast
+160,M-warrior #1,Monster,Warrior
+161,M-warrior #2,Monster,Warrior
+162,Tainted Wisdom,Monster,Fiend
+163,Lisark,Monster,Beast
+164,Lord of Zemia,Monster,Fiend
+165,The Judgement Hand,Monster,Warrior
+166,Mysterious Puppeteer,Monster,Warrior
+167,Ancient Jar,Monster,Rock
+168,Darkfire Dragon,Monster,Dragon
+169,Dark King of the Abyss,Monster,Fiend
+170,Spirit of the Harp,Monster,Fairy
+171,Big Eye,Monster,Fiend
+172,Armaill,Monster,Warrior
+173,Dark Prisoner,Monster,Fiend
+174,Hurricail,Monster,Spellcaster
+175,Ancient Brain,Monster,Fiend
+176,Fire Eye,Monster,Pyro
+177,Monsturtle,Monster,Aqua
+178,Claw Reacher,Monster,Fiend
+179,Phantom Dewan,Monster,Spellcaster
+180,Arlownay,Monster,Plant
+181,Dark Shade,Monster,Fiend
+182,Masked Clown,Monster,Warrior
+183,Lucky Trinket,Monster,Spellcaster
+184,Genin,Monster,Spellcaster
+185,Eyearmor,Monster,Warrior
+186,Fiend Refrection #2,Monster,Winged Beast
+187,Gate Deeg,Monster,Beast
+188,Synchar,Monster,Beast
+189,Fusionist,Monster,Beast
+190,Akakieisu,Monster,Spellcaster
+191,LALA Li-oon,Monster,Thunder
+192,Key Mace,Monster,Fairy
+193,Turtle Tiger,Monster,Aqua
+194,Terra the Terrible,Monster,Fiend
+195,Doron,Monster,Warrior
+196,Arma Knight,Monster,Aqua
+197,Mech Mole Zombie,Monster,Zombie
+198,Happy Lover,Monster,Fairy
+199,Penguin Knight,Monster,Aqua
+200,Petit Dragon,Monster,Dragon
+201,Frenzied Panda,Monster,Beast
+202,Air Marmot of Nefariousness,Monster,Beast
+203,Phantom Ghost,Monster,Zombie
+204,Mabarrel,Monster,Fiend
+205,Dorover,Monster,Aqua
+206,Twin Long Rods #1,Monster,Aqua
+207,Droll Bird,Monster,Winged Beast
+208,Petit Angel,Monster,Fairy
+209,Winged Cleaver,Monster,Insect
+210,Hinotama Soul,Monster,Pyro
+211,Kaminarikozou,Monster,Thunder
+212,Meotoko,Monster,Beast
+213,Aqua Madoor,Monster,Spellcaster
+214,Kagemusha of the Blue Flame,Monster,Warrior
+215,Flame Ghost,Monster,Zombie
+216,Dryad,Monster,Spellcaster
+217,B. Skull Dragon,Monster,Dragon
+218,Two-mouth Darkruler,Monster,Dinosaur
+219,Solitude,Monster,Beast-Warrior
+220,Masked Sorcerer,Monster,Spellcaster
+221,Kumootoko,Monster,Insect
+222,Midnight Fiend,Monster,Fiend
+223,Roaring Ocean Snake,Monster,Aqua
+224,Trap Master,Monster,Warrior
+225,Fiend Sword,Monster,Warrior
+226,Skull Stalker,Monster,Warrior
+227,Hitodenchak,Monster,Aqua
+228,Wood Remains,Monster,Zombie
+229,Hourglass of Life,Monster,Fairy
+230,Rare Fish,Monster,Fish
+231,Wood Clown,Monster,Warrior
+232,Madjinn Gunn,Monster,Fiend
+233,Dark Titan of Terror,Monster,Fiend
+234,Beautiful Headhuntress,Monster,Warrior
+235,Wodan the Resident of the Forest,Monster,Warrior
+236,Guardian of the Labyrinth,Monster,Warrior
+237,Haniwa,Monster,Rock
+238,Yashinoki,Monster,Plant
+239,Vishwar Randi,Monster,Warrior
+240,The Drdek,Monster,Fiend
+241,Dark Assailant,Monster,Zombie
+242,Candle of Fate,Monster,Fiend
+243,Water Element,Monster,Aqua
+244,Dissolverock,Monster,Rock
+245,Meda Bat,Monster,Fiend
+246,One Who Hunts Souls,Monster,Beast-Warrior
+247,Root Water,Monster,Fish
+248,Master & Expert,Monster,Beast
+249,Water Omotics,Monster,Aqua
+250,Hyo,Monster,Warrior
+251,Enchanting Mermaid,Monster,Fish
+252,Nekogal #1,Monster,Beast
+253,Angelwitch,Monster,Spellcaster
+254,Embryonic Beast,Monster,Fiend
+255,Prevent Rat,Monster,Beast
+256,Dimensional Warrior,Monster,Warrior
+257,Stone Armadiller,Monster,Rock
+258,Beastking of the Swamps,Monster,Aqua
+259,Ancient Sorcerer,Monster,Spellcaster
+260,Lunar Queen Elzaim,Monster,Fairy
+261,Wicked Mirror,Monster,Fiend
+262,The Little Swordsman of Aile,Monster,Warrior
+263,Rock Ogre Grotto #2,Monster,Rock
+264,Wing Egg Elf,Monster,Fairy
+265,The Furious Sea King,Monster,Aqua
+266,Princess of Tsurugi,Monster,Warrior
+267,Unknown Warrior of Fiend,Monster,Warrior
+268,Sectarian of Secrets,Monster,Spellcaster
+269,Versago the Destroyer,Monster,Fiend
+270,Wetha,Monster,Aqua
+271,Megirus Light,Monster,Fiend
+272,Mavelus,Monster,Winged Beast
+273,Ancient Tree of Enlightenment,Monster,Plant
+274,Green Phantom King,Monster,Plant
+275,Ground Attacker Bugroth,Monster,Machine
+276,Ray & Temperature,Monster,Fairy
+277,Gorgon Egg,Monster,Fiend
+278,Petit Moth,Monster,Insect
+279,King Fog,Monster,Fiend
+280,Protector of the Throne,Monster,Warrior
+281,Mystic Clown,Monster,Fiend
+282,Mystical Sheep #2,Monster,Beast
+283,Holograh,Monster,Machine
+284,Tao the Chanter,Monster,Spellcaster
+285,Serpent Marauder,Monster,Reptile
+286,Gatekeeper,Monster,Machine
+287,Ogre of the Black Shadow,Monster,Beast-Warrior
+288,Dark Artist,Monster,Fiend
+289,Change Slime,Monster,Aqua
+290,Moon Envoy,Monster,Warrior
+291,Fireyarou,Monster,Pyro
+292,Psychic Kappa,Monster,Aqua
+293,Masaki the Legendary Swordsman,Monster,Warrior
+294,Dragoness the Wicked Knight,Monster,Warrior
+295,Bio Plant,Monster,Fiend
+296,One-eyed Shield Dragon,Monster,Dragon
+297,Cyber Soldier of Dark World,Monster,Machine
+298,Wicked Dragon with the Ersatz Head,Monster,Dragon
+299,Sonic Maid,Monster,Warrior
+300,Kurama,Monster,Winged Beast
+301,Legendary Sword,Equip,
+302,Sword of Dark Destruction,Equip,
+303,Dark Energy,Equip,
+304,Axe of Despair,Equip,
+305,Laser Cannon Armor,Equip,
+306,Insect Armor with Laser Cannon,Equip,
+307,Elf's Light,Equip,
+308,Beast Fangs,Equip,
+309,Steel Shell,Equip,
+310,Vile Germs,Equip,
+311,Black Pendant,Equip,
+312,Silver Bow and Arrow,Equip,
+313,Horn of Light,Equip,
+314,Horn of the Unicorn,Equip,
+315,Dragon Treasure,Equip,
+316,Electro-whip,Equip,
+317,Cyber Shield,Equip,
+318,Elegant Egotist,Equip,
+319,Mystical Moon,Equip,
+320,Stop Defense,Magic,
+321,Malevolent Nuzzler,Equip,
+322,Violet Crystal,Equip,
+323,Book of Secret Arts,Equip,
+324,Invigoration,Equip,
+325,Machine Conversion Factory,Equip,
+326,Raise Body Heat,Equip,
+327,Follow Wind,Equip,
+328,Power of Kaishin,Equip,
+329,Dragon Capture Jar,Magic,
+330,Forest,Field,
+331,Wasteland,Field,
+332,Mountain,Field,
+333,Sogen,Field,
+334,Umi,Field,
+335,Yami,Field,
+336,Dark Hole,Magic,
+337,Raigeki,Magic,
+338,Mooyan Curry,Magic,
+339,Red Medicine,Magic,
+340,Goblin's Secret Remedy,Magic,
+341,Soul of the Pure,Magic,
+342,Dian Keto the Cure Master,Magic,
+343,Sparks,Magic,
+344,Hinotama,Magic,
+345,Final Flame,Magic,
+346,Ookazi,Magic,
+347,Tremendous Fire,Magic,
+348,Swords of Revealing Light,Magic,
+349,Spellbinding Circle,Magic,
+350,Dark-piercing Light,Magic,
+351,Yaranzo,Monster,Zombie
+352,Kanan the Swordmistress,Monster,Warrior
+353,Takriminos,Monster,Sea Serpent
+354,Stuffed Animal,Monster,Warrior
+355,Megasonic Eye,Monster,Machine
+356,Super War-lion,Monster,Beast
+357,Yamadron,Monster,Dragon
+358,Seiyaryu,Monster,Dragon
+359,Three-legged Zombies,Monster,Zombie
+360,Zera the Mant,Monster,Fiend
+361,Flying Penguin,Monster,Aqua
+362,Millennium Shield,Monster,Warrior
+363,Fairy's Gift,Monster,Spellcaster
+364,Black Luster Soldier,Monster,Warrior
+365,Fiend's Mirror,Monster,Fiend
+366,Labyrinth Wall,Monster,Rock
+367,Jirai Gumo,Monster,Insect
+368,Shadow Ghoul,Monster,Zombie
+369,Wall Shadow,Monster,Warrior
+370,Labyrinth Tank,Monster,Machine
+371,Sanga of the Thunder,Monster,Thunder
+372,Kazejin,Monster,Spellcaster
+373,Suijin,Monster,Aqua
+374,Gate Guardian,Monster,Warrior
+375,Dungeon Worm,Monster,Insect
+376,Monster Tamer,Monster,Warrior
+377,Ryu-kishin Powered,Monster,Fiend
+378,Swordstalker,Monster,Warrior
+379,La Jinn the Mystical Genie,Monster,Fiend
+380,Blue-eyes Ultimate Dragon,Monster,Dragon
+381,Toon Alligator,Monster,Reptile
+382,Rude Kaiser,Monster,Beast-Warrior
+383,Parrot Dragon,Monster,Dragon
+384,Dark Rabbit,Monster,Beast
+385,Bickuribox,Monster,Fiend
+386,Harpie's Pet Dragon,Monster,Dragon
+387,Mystic Lamp,Monster,Spellcaster
+388,Pendulum Machine,Monster,Machine
+389,Giltia the D. Knight,Monster,Warrior
+390,Launcher Spider,Monster,Machine
+391,Zoa,Monster,Fiend
+392,Metalzoa,Monster,Machine
+393,Zone Eater,Monster,Aqua
+394,Steel Scorpion,Monster,Machine
+395,Dancing Elf,Monster,Fairy
+396,Ocubeam,Monster,Fairy
+397,Leghul,Monster,Insect
+398,Ooguchi,Monster,Aqua
+399,Swordsman from a Foreign Land,Monster,Warrior
+400,Emperor of the Land and Sea,Monster,Reptile
+401,Ushi Oni,Monster,Fiend
+402,Monster Eye,Monster,Fiend
+403,Leogun,Monster,Beast
+404,Tatsunootoshigo,Monster,Beast
+405,Saber Slasher,Monster,Machine
+406,Yaiba Robo,Monster,Machine
+407,Machine King,Monster,Machine
+408,Giant Mech-soldier,Monster,Machine
+409,Metal Dragon,Monster,Machine
+410,Mechanical Spider,Monster,Machine
+411,Bat,Monster,Machine
+412,Giga-tech Wolf,Monster,Machine
+413,Cyber Soldier,Monster,Machine
+414,Shovel Crusher,Monster,Machine
+415,Mechanicalchacer,Monster,Machine
+416,Blocker,Monster,Machine
+417,Blast Juggler,Monster,Machine
+418,Golgoil,Monster,Machine
+419,Giganto,Monster,Machine
+420,Cyber-Stein,Monster,Machine
+421,Cyber Commander,Monster,Machine
+422,Jinzo #7,Monster,Machine
+423,Dice Armadillo,Monster,Machine
+424,Sky Dragon,Monster,Dragon
+425,Thunder Dragon,Monster,Thunder
+426,Stone D.,Monster,Rock
+427,Kaiser Dragon,Monster,Dragon
+428,Magician of Faith,Monster,Spellcaster
+429,Goddess of Whim,Monster,Fairy
+430,Water Magician,Monster,Spellcaster
+431,Ice Water,Monster,Aqua
+432,Waterdragon Fairy,Monster,Aqua
+433,Ancient Elf,Monster,Spellcaster
+434,Beautiful Beast Trainer,Monster,Warrior
+435,Water Girl,Monster,Aqua
+436,White Dolphin,Monster,Fish
+437,Deepsea Shark,Monster,Fish
+438,Metal Fish,Monster,Machine
+439,Bottom Dweller,Monster,Fish
+440,7 Colored Fish,Monster,Fish
+441,Mech Bass,Monster,Machine
+442,Aqua Dragon,Monster,Sea Serpent
+443,Sea King Dragon,Monster,Sea Serpent
+444,Turu-Purun,Monster,Aqua
+445,Guardian of the Sea,Monster,Aqua
+446,Aqua Snake,Monster,Aqua
+447,Giant Red Seasnake,Monster,Aqua
+448,Spike Seadra,Monster,Sea Serpent
+449,"30,000-Year White Turtle",Monster,Aqua
+450,Kappa Avenger,Monster,Aqua
+451,Kanikabuto,Monster,Aqua
+452,Zarigun,Monster,Aqua
+453,Millennium Golem,Monster,Rock
+454,Destroyer Golem,Monster,Rock
+455,Barrel Rock,Monster,Rock
+456,Minomushi Warrior,Monster,Warrior
+457,Stone Ghost,Monster,Rock
+458,Kaminari Attack,Monster,Thunder
+459,Tripwire Beast,Monster,Thunder
+460,Bolt Escargot,Monster,Thunder
+461,Bolt Penguin,Monster,Thunder
+462,The Immortal of Thunder,Monster,Thunder
+463,Electric Snake,Monster,Thunder
+464,Wing Eagle,Monster,Winged Beast
+465,Punished Eagle,Monster,Winged Beast
+466,Skull Red Bird,Monster,Winged Beast
+467,Crimson Sunbird,Monster,Winged Beast
+468,Queen Bird,Monster,Winged Beast
+469,Armed Ninja,Monster,Warrior
+470,Magical Ghost,Monster,Zombie
+471,Soul Hunter,Monster,Fiend
+472,Air Eater,Monster,Fiend
+473,Vermillion Sparrow,Monster,Pyro
+474,Sea Kamen,Monster,Aqua
+475,Sinister Serpent,Monster,Reptile
+476,Ganigumo,Monster,Insect
+477,Alinsection,Monster,Insect
+478,Insect Soldiers of the Sky,Monster,Insect
+479,Cockroach Knight,Monster,Insect
+480,Kuwagata Î±,Monster,Insect
+481,Burglar,Monster,Beast
+482,Pragtical,Monster,Dinosaur
+483,Garvas,Monster,Beast
+484,Ameba,Monster,Aqua
+485,Korogashi,Monster,Insect
+486,Boo Koo,Monster,Spellcaster
+487,Flower Wolf,Monster,Beast
+488,Rainbow Flower,Monster,Plant
+489,Barrel Lily,Monster,Plant
+490,Needle Ball,Monster,Fiend
+491,Peacock,Monster,Winged Beast
+492,Hoshiningen,Monster,Fairy
+493,Maha Vailo,Monster,Spellcaster
+494,Rainbow Marine Mermaid,Monster,Fish
+495,Musician King,Monster,Spellcaster
+496,Wilmee,Monster,Beast
+497,Yado Karu,Monster,Aqua
+498,Morinphen,Monster,Fiend
+499,Kattapillar,Monster,Insect
+500,Dragon Seeker,Monster,Fiend
+501,Man-eater Bug,Monster,Insect
+502,D. Human,Monster,Warrior
+503,Turtle Raccoon,Monster,Aqua
+504,Fungi of the Musk,Monster,Fiend
+505,Prisman,Monster,Rock
+506,Gale Dogra,Monster,Insect
+507,Crazy Fish,Monster,Fish
+508,Cyber Saurus,Monster,Machine
+509,Bracchio-raidus,Monster,Dinosaur
+510,Laughing Flower,Monster,Plant
+511,Bean Soldier,Monster,Plant
+512,Cannon Soldier,Monster,Machine
+513,Guardian of the Throne Room,Monster,Machine
+514,Brave Scizzar,Monster,Machine
+515,The Statue of Easter Island,Monster,Rock
+516,Muka Muka,Monster,Insect
+517,Sand Stone,Monster,Rock
+518,Boulder Tortoise,Monster,Aqua
+519,Fire Kraken,Monster,Aqua
+520,Turtle Bird,Monster,Aqua
+521,Skullbird,Monster,Winged Beast
+522,Monstrous Bird,Monster,Winged Beast
+523,The Bistro Butcher,Monster,Fiend
+524,Star Boy,Monster,Aqua
+525,Spirit of the Mountain,Monster,Spellcaster
+526,Neck Hunter,Monster,Fiend
+527,Milus Radiant,Monster,Beast
+528,Togex,Monster,Beast
+529,Flame Cerebrus,Monster,Pyro
+530,Eldeen,Monster,Spellcaster
+531,Mystical Sand,Monster,Rock
+532,Gemini Elf,Monster,Spellcaster
+533,Kwagar Hercules,Monster,Insect
+534,Minar,Monster,Insect
+535,Kamakiriman,Monster,Insect
+536,Mechaleon,Monster,Reptile
+537,Mega Thunderball,Monster,Thunder
+538,Niwatori,Monster,Winged Beast
+539,Corroding Shark,Monster,Zombie
+540,Skelengel,Monster,Fairy
+541,Hane-Hane,Monster,Beast
+542,Misairuzame,Monster,Fish
+543,Tongyo,Monster,Fish
+544,Dharma Cannon,Monster,Machine
+545,Skelgon,Monster,Zombie
+546,Wow Warrior,Monster,Fish
+547,Griggle,Monster,Plant
+548,Bone Mouse,Monster,Zombie
+549,Frog the Jam,Monster,Aqua
+550,Behegon,Monster,Aqua
+551,Dark Elf,Monster,Spellcaster
+552,Winged Dragon #2,Monster,Winged Beast
+553,Mushroom Man #2,Monster,Warrior
+554,Lava Battleguard,Monster,Warrior
+555,Tyhone #2,Monster,Dragon
+556,The Wandering Doomed,Monster,Zombie
+557,Steel Ogre Grotto #1,Monster,Machine
+558,Pot the Trick,Monster,Rock
+559,Oscillo Hero,Monster,Warrior
+560,Invader from Another Dimension,Monster,Fiend
+561,Lesser Dragon,Monster,Dragon
+562,Needle Worm,Monster,Insect
+563,Wretched Ghost of the Attic,Monster,Fiend
+564,Great Mammoth of Goldfine,Monster,Zombie
+565,Man-eating Black Shark,Monster,Fish
+566,Yormungarde,Monster,Reptile
+567,Darkworld Thorns,Monster,Plant
+568,Anthrosaurus,Monster,Dinosaur
+569,Drooling Lizard,Monster,Reptile
+570,Trakadon,Monster,Dinosaur
+571,B. Dragon Jungle King,Monster,Dragon
+572,Empress Judge,Monster,Warrior
+573,Little D,Monster,Dinosaur
+574,Witch of the Black Forest,Monster,Spellcaster
+575,Ancient One of the Deep Forest,Monster,Beast
+576,Giant Scorpion of the Tundra,Monster,Insect
+577,Crow Goblin,Monster,Winged Beast
+578,Leo Wizard,Monster,Spellcaster
+579,Abyss Flower,Monster,Plant
+580,Patrol Robo,Monster,Machine
+581,Takuhee,Monster,Winged Beast
+582,Dark Witch,Monster,Fairy
+583,Weather Report,Monster,Aqua
+584,Binding Chain,Monster,Fairy
+585,Mechanical Snail,Monster,Machine
+586,Greenkappa,Monster,Warrior
+587,Mon Larvas,Monster,Beast
+588,Living Vase,Monster,Plant
+589,Tentacle Plant,Monster,Plant
+590,Beaked Snake,Monster,Reptile
+591,Morphing Jar,Monster,Rock
+592,Muse-A,Monster,Fairy
+593,Giant Turtle Who Feeds on Flames,Monster,Aqua
+594,Rose Spectre of Dunn,Monster,Plant
+595,Fiend Refrection #1,Monster,Winged Beast
+596,Ghoul with an Appetite,Monster,Zombie
+597,Pale Beast,Monster,Beast
+598,Little Chimera,Monster,Beast
+599,Violent Rain,Monster,Aqua
+600,Key Mace #2,Monster,Fiend
+601,Tenderness,Monster,Fairy
+602,Penguin Soldier,Monster,Aqua
+603,Fairy Dragon,Monster,Dragon
+604,Obese Marmot of Nefariousness,Monster,Beast
+605,Liquid Beast,Monster,Aqua
+606,Twin Long Rods 2,Monster,Aqua
+607,Great Bill,Monster,Beast
+608,Shining Friendship,Monster,Fairy
+609,Bladefly,Monster,Insect
+610,Electric Lizard,Monster,Thunder
+611,Hiro's Shadow Scout,Monster,Fiend
+612,Lady of Faith,Monster,Spellcaster
+613,Twin-headed Thunder Dragon,Monster,Thunder
+614,Hunter Spider,Monster,Insect
+615,Armored Starfish,Monster,Aqua
+616,Hourglass of Courage,Monster,Fairy
+617,Marine Beast,Monster,Fish
+618,Warrior of Tradition,Monster,Warrior
+619,Rock Spirit,Monster,Spellcaster
+620,Snakeyashi,Monster,Plant
+621,Succubus Knight,Monster,Warrior
+622,Ill Witch,Monster,Spellcaster
+623,The Thing That Hides In the Mud,Monster,Rock
+624,High Tide Gyojin,Monster,Aqua
+625,Fairy of the Fountain,Monster,Aqua
+626,Amazon of the Seas,Monster,Fish
+627,Nekogal #2,Monster,Beast-Warrior
+628,Witch's Apprentice,Monster,Spellcaster
+629,Armored Rat,Monster,Beast
+630,Ancient Lizard Warrior,Monster,Reptile
+631,Maiden of the Moonlight,Monster,Spellcaster
+632,Stone Ogre Grotto,Monster,Rock
+633,Winged Egg of New Life,Monster,Fairy
+634,Night Lizard,Monster,Aqua
+635,Queen's Double,Monster,Warrior
+636,Blue-winged Crown,Monster,Winged Beast
+637,Trent,Monster,Plant
+638,Queen of Autumn Leaves,Monster,Plant
+639,Amphibious Bugroth,Monster,Aqua
+640,Acid Crawler,Monster,Insect
+641,Invader of the Throne,Monster,Warrior
+642,Mystical Sheep #1,Monster,Beast
+643,Disk Magician,Monster,Machine
+644,Flame Viper,Monster,Pyro
+645,Royal Guard,Monster,Machine
+646,Gruesome Goo,Monster,Aqua
+647,Hyosube,Monster,Aqua
+648,Machine Attacker,Monster,Machine
+649,Hibikime,Monster,Warrior
+650,Whiptail Crow,Monster,Fiend
+651,Kunai with Chain,Equip,
+652,Magical Labyrinth,Equip,
+653,Warrior Elimination,Magic,
+654,Salamandra,Equip,
+655,Cursebreaker,Magic,
+656,Eternal Rest,Magic,
+657,Megamorph,Equip,
+658,Metalmorph,Equip,
+659,Winged Trumpeter,Equip,
+660,Stain Storm,Magic,
+661,Crush Card,Magic,
+662,Eradicating Aerosol,Magic,
+663,Breath of Light,Magic,
+664,Eternal Draught,Magic,
+665,Curse of Millennium Shield,Ritual,
+666,Yamadron Ritual,Ritual,
+667,Gate Guardian Ritual,Ritual,
+668,Bright Castle,Equip,
+669,Shadow Spell,Magic,
+670,Black Luster Ritual,Ritual,
+671,Zera Ritual,Ritual,
+672,Harpie's Feather Duster,Magic,
+673,War-lion Ritual,Ritual,
+674,Beastry Mirror Ritual,Ritual,
+675,Ultimate Dragon,Ritual,
+676,Commencement Dance,Ritual,
+677,Hamburger Recipe,Ritual,
+678,Revival of Sennen Genjin,Ritual,
+679,Novox's Prayer,Ritual,
+680,Curse of Tri-Horned Dragon,Ritual,
+681,House of Adhesive Tape,Trap,
+682,Eatgaboon,Trap,
+683,Bear Trap,Trap,
+684,Invisible Wire,Trap,
+685,Acid Trap Hole,Trap,
+686,Widespread Ruin,Trap,
+687,Goblin Fan,Trap,
+688,Bad Reaction to Simochi,Trap,
+689,Reverse Trap,Trap,
+690,Fake Trap,Trap,
+691,Revived of Serpent Night Dragon,Ritual,
+692,Turtle Oath,Ritual,
+693,Contruct of Mask,Ritual,
+694,Resurrection of Chakra,Ritual,
+695,Puppet Ritual,Ritual,
+696,Javelin Beetle Pact,Ritual,
+697,Garma Sword Oath,Ritual,
+698,Cosmo Queen's Prayer,Ritual,
+699,Revival of Skeleton Rider,Ritual,
+700,Fortress Whale's Oath,Ritual,
+701,Performance of Sword,Monster,Warrior
+702,Hungry Burger,Monster,Warrior
+703,Sengenjin,Monster,Beast-Warrior
+704,Skull Guardian,Monster,Warrior
+705,Tri-horned Dragon,Monster,Dragon
+706,Serpent Night Dragon,Monster,Dragon
+707,Skull Knight,Monster,Spellcaster
+708,Cosmo Queen,Monster,Spellcaster
+709,Chakra,Monster,Fiend
+710,Crab Turtle,Monster,Aqua
+711,Mikazukinoyaiba,Monster,Dragon
+712,Meteor Dragon,Monster,Dragon
+713,Meteor B. Dragon,Monster,Dragon
+714,Firewing Pegasus,Monster,Beast
+715,Psycho-Puppet,Monster,Fiend
+716,Garma Sword,Monster,Warrior
+717,Javelin Beetle,Monster,Insect
+718,Fortress Whale,Monster,Fish
+719,Dokurorider,Monster,Zombie
+720,Mask of Shine & Dark,Monster,Spellcaster
+721,Dark Magic Ritual,Ritual,
+722,Magician of Black Chaos,Monster,Spellcaster
+723,Equips,Magic
+724,Traps,Trap
