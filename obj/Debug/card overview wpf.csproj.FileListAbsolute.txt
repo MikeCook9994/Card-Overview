@@ -28,3 +28,33 @@ D:\cook\Documents\projects\Card-Overview\obj\Debug\Card Overview.exe
 D:\cook\Documents\projects\Card-Overview\obj\Debug\Card Overview.pdb
 D:\cook\Documents\projects\Card-Overview\bin\Debug\fm-cards.csv
 D:\cook\Documents\projects\Card-Overview\bin\Debug\settings.dat
+C:\Users\Mike\Documents\projects\Card-Overview\bin\Debug\Card Overview.exe.config
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\Card Overview.exe
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\Card Overview.pdb
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\card overview wpf.csprojResolveAssemblyReference.cache
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\About.g.cs
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\ButtonControl.g.cs
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\CardView.g.cs
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\CardWindow.g.cs
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\MainWindow.g.cs
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\SearchBox.g.cs
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\Settings.g.cs
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\App.g.cs
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\Card Overview_MarkupCompile.cache
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\Card Overview_MarkupCompile.lref
+C:\Users\Mike\Documents\projects\Card-Overview\bin\Debug\fm-cards.csv
+C:\Users\Mike\Documents\projects\Card-Overview\bin\Debug\Card Overview.exe
+C:\Users\Mike\Documents\projects\Card-Overview\bin\Debug\Card Overview.pdb
+C:\Users\Mike\Documents\projects\Card-Overview\bin\Debug\CsvHelper.dll
+C:\Users\Mike\Documents\projects\Card-Overview\bin\Debug\CsvHelper.xml
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\About.baml
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\ButtonControl.baml
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\CardView.baml
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\CardWindow.baml
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\MainWindow.baml
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\SearchBox.baml
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\Settings.baml
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\Card Overview.g.resources
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\card_overview_wpf.Properties.Resources.resources
+C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\card overview wpf.csproj.GenerateResource.Cache
+C:\Users\Mike\Documents\projects\Card-Overview\bin\Debug\layouts\test.cof

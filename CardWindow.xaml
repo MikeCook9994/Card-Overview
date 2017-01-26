@@ -7,26 +7,5 @@
         mc:Ignorable="d"
         Title="Card Overview - Display" Height="300" Width="300" ResizeMode="NoResize" Closing="Window_Closing"
         ShowInTaskbar="True">
-    <DockPanel>
-        <Menu DockPanel.Dock="Top" Height="20" Margin="0,0,0,251">
-            <MenuItem Header="Layout">
-                <MenuItem Header="_Open" Click="MenuItem_Click" />
-                <MenuItem Header="_Save" Click="MenuItem_Click_1" />
-            </MenuItem>
-            <MenuItem Header="Columns">
-                <MenuItem Header="Add" Click="MenuItem_Click_2" />
-                <MenuItem Header="Remove" Click="MenuItem_Click_4" />
-            </MenuItem>
-            <MenuItem Header="Rows">
-                <MenuItem Header="Add" Click="MenuItem_Click_3" />
-                <MenuItem Header="Remove" Click="MenuItem_Click_5" />
-            </MenuItem>
-            <MenuItem Header="About" Click="MenuItem_Click_7" />
-            <MenuItem Header="Settings" Click="MenuItem_Click_6" />
-        </Menu>
-        <Canvas Name="mainCanvas" />
-    </DockPanel>
-
-
-
+    <Canvas Name="mainCanvas" />
 </Window>
