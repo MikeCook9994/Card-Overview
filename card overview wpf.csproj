@@ -102,19 +102,12 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CardWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="CardView.xaml.cs">
       <DependentUpon>CardView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CardWindow.xaml.cs">
-      <DependentUpon>CardWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

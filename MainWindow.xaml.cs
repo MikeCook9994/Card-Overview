@@ -1,13 +1,15 @@
-﻿using CsvHelper;
-using Microsoft.Win32;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Data;
-using System.IO;
+using System.Collections.Generic;
 using System.Linq;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+
+using Microsoft.Win32;
+
+using CsvHelper;
 
 namespace card_overview_wpf
 {
@@ -17,16 +19,15 @@ namespace card_overview_wpf
     public partial class MainWindow : Window
     {
 
-        //Windows
         private DataTable cardTable;
+        private Settings settings;
         private About about;
-        private CardWindow cardWindow;
+        private SearchBox searchBox;
 
         private List<List<CardView>> cards;
         private int cols = 1;
         private int rows = 7;
 
-        //Settings
         private int cardWidth = 100;
         private int cardHeight = 100;
 
@@ -41,144 +42,34 @@ namespace card_overview_wpf
             InitializeComponent();
         }
 
-        private void Resize()
+        public void AddCardView(CardView cv)
         {
-            cardWindow.Width = (cols * cardWidth) + 17;
-            cardWindow.Height = (rows * cardHeight) + 40;
-
-            if ((cols * cardWidth) + 8 > 300)
-            {
-                Width = (cols * cardWidth) + 8;
-            }
-            else
-            {
-                Width = 300;
-            }
-
-            if ((rows * cardHeight) + 60 > 300)
-            {
-                Height = (rows * cardHeight) + 60;
-            }
-            else
-            {
-                Height = 300;
-            }
+            mainCanvas.Children.Add(cv);
         }
 
-        private bool LoadFromFile(string filename)
+        public void RemoveCardView(CardView cv)
         {
-            string[] lines;
-            if ((lines = System.IO.File.ReadAllLines(filename)) != null)
-            {
-                //Clear everything
-                cardWindow.ClearAll();
-                ClearAll();
-
-                cards = new List<List<CardView>>();
-
-                cols = int.Parse(lines[0]);
-                rows = int.Parse(lines[1]);
-
-                for (int i = 0; i < cols; i++)
-                {
-                    List<CardView> colC = new List<CardView>();
-
-                    for (int j = 0; j < rows; j++)
-                    {
-                        //string card = lines[(rows * i) + j + 2];
-                        //CardView cv = new CardView(this);
-                        //cv.SetTbBackgroundColor(tbBackgroundColor);
-                        //cv.SetTextColor(tbTextColor);
-                        //cv.SetImage(int.Parse(card.Split(' ')[0]));
-                        //cv.SetVisibility(bool.Parse(card.Split(' ')[1]));
-                        //colC.Add(cv);
-
-                        //Canvas.SetLeft(cv, cardWidth * i);
-                        //Canvas.SetTop(cv, cardHeight * j);
-                        //cardWindow.AddCardView(cv);
-                    }
-                    cards.Add(colC);
-                }
-
-                Resize();
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            mainCanvas.Children.Remove(cv);
         }
 
-        private void ClearAll()
+        public void SetBackgroundColor(string colorCode)
+        {
+            colorCode = colorCode.Replace("#", "");
+            byte r = byte.Parse(colorCode.Substring(0, 2), System.Globalization.NumberStyles.HexNumber);
+            byte g = byte.Parse(colorCode.Substring(2, 2), System.Globalization.NumberStyles.HexNumber);
+            byte b = byte.Parse(colorCode.Substring(4, 2), System.Globalization.NumberStyles.HexNumber);
+            Background = new SolidColorBrush(Color.FromRgb(r, g, b));
+        }
+
+        public void ClearAll()
         {
             mainCanvas.Children.Clear();
         }
 
-        
-
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            if (cardWindow != null)
-            {
-                cardWindow.Close();
-            }
-            //if (searchBox != null)
-            //{
-            //    searchBox.Close();
-            //}
-            //if (settings != null)
-            //{
-            //    settings.Close();
-            //}
-            if (about != null)
-            {
-                about.Close();
-            }
+            e.Cancel = true;
         }
-
-        protected override void OnClosed(EventArgs e)
-        {
-            base.OnClosed(e);
-
-            Application.Current.Shutdown();
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            LoadCardList();
-            LoadSettings();
-            foreach (Window window in System.Windows.Application.Current.Windows)
-            {
-                if (window is CardWindow)
-                    cardWindow = window as CardWindow;
-            }
-
-            cardWindow.SetBackgroundColor(backgroundColor);
-            cardWindow.Show();
-
-            Resize();
-
-            cards = new List<List<CardView>>();
-
-            for (int i = 0; i < cols; i++)
-            {
-                List<CardView> colC = new List<CardView>();
-
-                for (int j = 0; j < rows; j++)
-                {
-                    //CardView cv = new CardView(this);
-                    //cv.SetTbBackgroundColor(tbBackgroundColor);
-                    //cv.SetTextColor(tbTextColor);
-                    //colC.Add(cv);
-
-                    //Canvas.SetLeft(cv, cardWidth * i);
-                    //Canvas.SetTop(cv, cardHeight * j);
-                    //cardWindow.AddCardView(cv);
-                }
-                cards.Add(colC);
-            }
-        }
-
 
         private void MenuItem_Click(object sender, RoutedEventArgs e) //Open
         {
@@ -234,14 +125,14 @@ namespace card_overview_wpf
             int i = cols - 1;
             for (int j = 0; j < rows; j++)
             {
-                //CardView cv = new CardView(this);
-                //cv.SetTbBackgroundColor(tbBackgroundColor);
-                //cv.SetTextColor(tbTextColor);
-                //colC.Add(cv);
+                CardView cv = new CardView(this);
+                cv.SetTbBackgroundColor(tbBackgroundColor);
+                cv.SetTextColor(tbTextColor);
+                colC.Add(cv);
 
-                //Canvas.SetLeft(cv, cardWidth * i);
-                //Canvas.SetTop(cv, cardHeight * j);
-                //cardWindow.AddCardView(cv);
+                Canvas.SetLeft(cv, cardWidth * i);
+                Canvas.SetTop(cv, cardHeight * j);
+                AddCardView(cv);
             }
             cards.Add(colC);
         }
@@ -252,7 +143,7 @@ namespace card_overview_wpf
             int i = cols - 1;
             for (int j = 0; j < rows; j++)
             {
-                cardWindow.RemoveCardView(cards[i][j]);
+                RemoveCardView(cards[i][j]);
             }
 
             //Remove column from both lists
@@ -271,14 +162,14 @@ namespace card_overview_wpf
             int j = rows - 1;
             for (int i = 0; i < cols; i++)
             {
-                //CardView cv = new CardView(this);
-                //cv.SetTbBackgroundColor(tbBackgroundColor);
-                //cv.SetTextColor(tbTextColor);
-                //cards[i].Add(cv);
+                CardView cv = new CardView(this);
+                cv.SetTbBackgroundColor(tbBackgroundColor);
+                cv.SetTextColor(tbTextColor);
+                cards[i].Add(cv);
 
-                //Canvas.SetLeft(cv, cardWidth * i);
-                //Canvas.SetTop(cv, cardHeight * j);
-                //cardWindow.AddCardView(cv);
+                Canvas.SetLeft(cv, cardWidth * i);
+                Canvas.SetTop(cv, cardHeight * j);
+                AddCardView(cv);
             }
         }
 
@@ -288,7 +179,7 @@ namespace card_overview_wpf
             int j = rows - 1;
             for (int i = 0; i < cols; i++)
             {
-                cardWindow.RemoveCardView(cards[i][j]);
+                RemoveCardView(cards[i][j]);
 
                 //Remove row from both lists
                 cards[i].RemoveAt(j);
@@ -310,8 +201,8 @@ namespace card_overview_wpf
 
             if (!found)
             {
-                //settings = new Settings();
-                //settings.Show(this);
+                settings = new Settings();
+                settings.Show(this);
             }
         }
 
@@ -331,29 +222,172 @@ namespace card_overview_wpf
             }
         }
 
-        private void LoadCardList()
+        private bool LoadFromFile(string filename)
         {
-            //Setup the table
-            cardTable = new DataTable();
-
-            cardTable.Columns.Add("id", typeof(int));
-            cardTable.Columns.Add("name", typeof(string));
-            cardTable.Columns.Add("cardtype", typeof(string));
-            cardTable.Columns.Add("type", typeof(string));
-            cardTable.CaseSensitive = false;
-
-            string filename = "fm-cards.csv";
-            CsvReader csv = new CsvReader(File.OpenText(filename));
-            csv.Configuration.WillThrowOnMissingField = false;
-
-            while (csv.Read())
+            string[] lines;
+            if ((lines = System.IO.File.ReadAllLines(filename)) != null)
             {
-                DataRow row = cardTable.NewRow();
-                foreach (DataColumn column in cardTable.Columns)
+                //Clear everything
+                ClearAll();
+
+                cards = new List<List<CardView>>();
+
+                cols = int.Parse(lines[0]);
+                rows = int.Parse(lines[1]);
+
+                for (int i = 0; i < cols; i++)
                 {
-                    row[column.ColumnName] = csv.GetField(column.DataType, column.ColumnName);
+                    List<CardView> colC = new List<CardView>();
+
+                    for (int j = 0; j < rows; j++)
+                    {
+                        string card = lines[(rows * i) + j + 2];
+                        CardView cv = new CardView(this);
+                        cv.SetTbBackgroundColor(tbBackgroundColor);
+                        cv.SetTextColor(tbTextColor);
+                        cv.SetImage(int.Parse(card.Split(' ')[0]));
+                        cv.SetVisibility(bool.Parse(card.Split(' ')[1]));
+                        colC.Add(cv);
+
+                        Canvas.SetLeft(cv, cardWidth * i);
+                        Canvas.SetTop(cv, cardHeight * j);
+                        AddCardView(cv);
+                    }
+                    cards.Add(colC);
                 }
-                cardTable.Rows.Add(row);
+
+                Resize();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private void Resize()
+        {
+            Width = (cols * cardWidth) + 17;
+            Height = (rows * cardHeight) + 40;
+
+            if ((cols * cardWidth) + 8 > 300)
+            {
+                Width = (cols * cardWidth) + 8;
+            }
+            else
+            {
+                Width = 300;
+            }
+
+            if ((rows * cardHeight) + 60 > 300)
+            {
+                Height = (rows * cardHeight) + 60;
+            }
+            else
+            {
+                Height = 300;
+            }
+        }
+
+        public string GetIconLocation()
+        {
+            return iconLocation;
+        }
+
+        public string GetCardFilename(int cardid)
+        {
+            DataRow result = cardTable.Select("id = '" + cardid + "'")[0];
+            int id = int.Parse(result["id"].ToString());
+            return id.ToString("D3") + ".PNG";
+        }
+
+        public void ShowSearchBox(CardView cv)
+        {
+            bool found = false;
+            foreach (Window window in System.Windows.Application.Current.Windows)
+            {
+                if (window is SearchBox)
+                    found = true;
+            }
+
+            if (!found)
+            {
+                searchBox = new SearchBox(this, cv);
+                searchBox.Show();
+            }
+        }
+
+        public string GetBackgroundColor()
+        {
+            return backgroundColor;
+        }
+
+        public Color GetTbBackgroundColor()
+        {
+            return tbBackgroundColor;
+        }
+
+        public Color GetTbTextColor()
+        {
+            return tbTextColor;
+        }
+
+        public int GetCardId(string name)
+        {
+            DataRow result = cardTable.Select("name = '" + name + "'")[0];
+            int id = int.Parse(result["id"].ToString());
+            return id;
+        }
+
+        public DataRow[] SearchCardList(string text)
+        {
+            DataRow[] result = new DataRow[0];
+
+            int a;
+            if (int.TryParse(text, out a))
+            {
+                DataRow[] result1 = cardTable.Select("id = " + a);
+                result = result.Union(result1).ToArray();
+            }
+
+            DataRow[] result2 = cardTable.Select("name LIKE '*" + text + "*'");
+            result = result.Union(result2).ToArray();
+
+            DataRow[] result3 = cardTable.Select("cardtype LIKE '*" + text + "*'");
+            result = result.Union(result3).ToArray();
+
+            DataRow[] result4 = cardTable.Select("type LIKE '*" + text + "*'");
+            result = result.Union(result4).ToArray();
+
+            return result;
+        }
+
+        public void SetIconLocation(string location)
+        {
+            iconLocation = location;
+        }
+
+        public void SetTbBackgroundColor(Color color)
+        {
+            tbBackgroundColor = color;
+            foreach (List<CardView> column in cards)
+            {
+                foreach (CardView cv in column)
+                {
+                    cv.SetTbBackgroundColor(color);
+                }
+            }
+        }
+
+        public void SetTbTextColor(Color color)
+        {
+            tbTextColor = color;
+            foreach (List<CardView> column in cards)
+            {
+                foreach (CardView cv in column)
+                {
+                    cv.SetTextColor(color);
+                }
             }
         }
 
@@ -398,6 +432,32 @@ namespace card_overview_wpf
             }
         }
 
+        private void LoadCardList()
+        {
+            //Setup the table
+            cardTable = new DataTable();
+
+            cardTable.Columns.Add("id", typeof(int));
+            cardTable.Columns.Add("name", typeof(string));
+            cardTable.Columns.Add("cardtype", typeof(string));
+            cardTable.Columns.Add("type", typeof(string));
+            cardTable.CaseSensitive = false;
+
+            string filename = "fm-cards.csv";
+            CsvReader csv = new CsvReader(File.OpenText(filename));
+            csv.Configuration.WillThrowOnMissingField = false;
+
+            while (csv.Read())
+            {
+                DataRow row = cardTable.NewRow();
+                foreach (DataColumn column in cardTable.Columns)
+                {
+                    row[column.ColumnName] = csv.GetField(column.DataType, column.ColumnName);
+                }
+                cardTable.Rows.Add(row);
+            }
+        }
+
         public void LoadSettings()
         {
             string filename = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + "\\settings.dat";
@@ -421,111 +481,34 @@ namespace card_overview_wpf
             }
         }
 
-        public string GetCardFilename(int cardid)
+        private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            DataRow result = cardTable.Select("id = '" + cardid + "'")[0];
-            int id = int.Parse(result["id"].ToString());
-            return id.ToString("D3") + ".PNG";
-        }
+            LoadCardList();
+            LoadSettings();
 
-        public string GetIconLocation()
-        {
-            return iconLocation;
-        }
+            SetBackgroundColor(backgroundColor);
+            Show();
 
-        public int GetCardId(string name)
-        {
-            DataRow result = cardTable.Select("name = '" + name + "'")[0];
-            int id = int.Parse(result["id"].ToString());
-            return id;
-        }
+            Resize();
 
-        public DataRow[] SearchCardList(string text)
-        {
-            DataRow[] result = new DataRow[0];
+            cards = new List<List<CardView>>();
 
-            int a;
-            if (int.TryParse(text, out a))
+            for (int i = 0; i < cols; i++)
             {
-                DataRow[] result1 = cardTable.Select("id = " + a);
-                result = result.Union(result1).ToArray();
-            }
+                List<CardView> colC = new List<CardView>();
 
-            DataRow[] result2 = cardTable.Select("name LIKE '*" + text + "*'");
-            result = result.Union(result2).ToArray();
-
-            DataRow[] result3 = cardTable.Select("cardtype LIKE '*" + text + "*'");
-            result = result.Union(result3).ToArray();
-
-            DataRow[] result4 = cardTable.Select("type LIKE '*" + text + "*'");
-            result = result.Union(result4).ToArray();
-
-            return result;
-        }
-
-        public void SetIconLocation(string location)
-        {
-            iconLocation = location;
-        }
-
-        public void SetBackgroundColor(string colorCode)
-        {
-            backgroundColor = colorCode;
-            cardWindow.SetBackgroundColor(colorCode);
-        }
-
-        public void SetTbBackgroundColor(Color color)
-        {
-            tbBackgroundColor = color;
-            foreach (List<CardView> column in cards)
-            {
-                foreach (CardView cv in column)
+                for (int j = 0; j < rows; j++)
                 {
-                    cv.SetTbBackgroundColor(color);
+                    CardView cv = new CardView(this);
+                    cv.SetTbBackgroundColor(tbBackgroundColor);
+                    cv.SetTextColor(tbTextColor);
+                    colC.Add(cv);
+
+                    Canvas.SetLeft(cv, cardWidth * i);
+                    Canvas.SetTop(cv, cardHeight * j);
+                    AddCardView(cv);
                 }
-            }
-        }
-
-        public void SetTbTextColor(Color color)
-        {
-            tbTextColor = color;
-            foreach (List<CardView> column in cards)
-            {
-                foreach (CardView cv in column)
-                {
-                    cv.SetTextColor(color);
-                }
-            }
-        }
-
-        public string GetBackgroundColor()
-        {
-            return backgroundColor;
-        }
-
-        public Color GetTbBackgroundColor()
-        {
-            return tbBackgroundColor;
-        }
-
-        public Color GetTbTextColor()
-        {
-            return tbTextColor;
-        }
-
-        public void ShowSearchBox(CardView cv)
-        {
-            bool found = false;
-            foreach (Window window in System.Windows.Application.Current.Windows)
-            {
-                if (window is SearchBox)
-                    found = true;
-            }
-
-            if (!found)
-            {
-                //searchBox = new SearchBox(this, cv);
-                //searchBox.Show();
+                cards.Add(colC);
             }
         }
     }

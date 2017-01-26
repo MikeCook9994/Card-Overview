@@ -13,14 +13,14 @@ namespace card_overview_wpf
     {
         public static Color[] colors = { Colors.White, Colors.Black, Colors.Red, Colors.Blue };
 
-        CardWindow window;
+        MainWindow window;
         
         public Settings()
         {
             InitializeComponent();
         }
 
-        public void Show(CardWindow w)
+        public void Show(MainWindow w)
         {
             Show();
             textBoxIconLocation.Text = w.GetIconLocation();

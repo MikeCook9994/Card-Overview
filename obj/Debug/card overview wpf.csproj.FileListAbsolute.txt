@@ -2,7 +2,6 @@ D:\cook\Documents\projects\Card-Overview\bin\Debug\Card Overview.exe.config
 D:\cook\Documents\projects\Card-Overview\obj\Debug\card overview wpf.csprojResolveAssemblyReference.cache
 D:\cook\Documents\projects\Card-Overview\obj\Debug\About.g.cs
 D:\cook\Documents\projects\Card-Overview\obj\Debug\CardView.g.cs
-D:\cook\Documents\projects\Card-Overview\obj\Debug\CardWindow.g.cs
 D:\cook\Documents\projects\Card-Overview\obj\Debug\SearchBox.g.cs
 D:\cook\Documents\projects\Card-Overview\obj\Debug\Settings.g.cs
 D:\cook\Documents\projects\Card-Overview\obj\Debug\App.g.cs
