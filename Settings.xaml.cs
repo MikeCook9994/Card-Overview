@@ -1,17 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Forms;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace card_overview_wpf
 {
@@ -22,14 +13,14 @@ namespace card_overview_wpf
     {
         public static Color[] colors = { Colors.White, Colors.Black, Colors.Red, Colors.Blue };
 
-        MainWindow window;
+        CardWindow window;
         
         public Settings()
         {
             InitializeComponent();
         }
 
-        public void Show(MainWindow w)
+        public void Show(CardWindow w)
         {
             Show();
             textBoxIconLocation.Text = w.GetIconLocation();

@@ -3,7 +3,6 @@ D:\cook\Documents\projects\Card-Overview\obj\Debug\card overview wpf.csprojResol
 D:\cook\Documents\projects\Card-Overview\obj\Debug\About.g.cs
 D:\cook\Documents\projects\Card-Overview\obj\Debug\CardView.g.cs
 D:\cook\Documents\projects\Card-Overview\obj\Debug\CardWindow.g.cs
-D:\cook\Documents\projects\Card-Overview\obj\Debug\MainWindow.g.cs
 D:\cook\Documents\projects\Card-Overview\obj\Debug\SearchBox.g.cs
 D:\cook\Documents\projects\Card-Overview\obj\Debug\Settings.g.cs
 D:\cook\Documents\projects\Card-Overview\obj\Debug\App.g.cs
@@ -16,7 +15,6 @@ D:\cook\Documents\projects\Card-Overview\bin\Debug\CsvHelper.xml
 D:\cook\Documents\projects\Card-Overview\obj\Debug\About.baml
 D:\cook\Documents\projects\Card-Overview\obj\Debug\CardView.baml
 D:\cook\Documents\projects\Card-Overview\obj\Debug\CardWindow.baml
-D:\cook\Documents\projects\Card-Overview\obj\Debug\MainWindow.baml
 D:\cook\Documents\projects\Card-Overview\obj\Debug\SearchBox.baml
 D:\cook\Documents\projects\Card-Overview\obj\Debug\Settings.baml
 D:\cook\Documents\projects\Card-Overview\obj\Debug\Card Overview.g.resources
@@ -56,3 +54,5 @@ C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\card_overview_wpf.Prope
 C:\Users\Mike\Documents\projects\Card-Overview\obj\Debug\card overview wpf.csproj.GenerateResource.Cache
 C:\Users\Mike\Documents\projects\Card-Overview\bin\Debug\layouts\test.cof
 D:\cook\Documents\projects\Card-Overview\bin\Debug\layouts\test.cof
+D:\cook\Documents\projects\Card-Overview\obj\Debug\MainWindow.g.cs
+D:\cook\Documents\projects\Card-Overview\obj\Debug\MainWindow.baml

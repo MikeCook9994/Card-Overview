@@ -10,13 +10,13 @@ namespace card_overview_wpf
     /// </summary>
     public partial class SearchBox : Window
     {
-        private MainWindow window;
+        private CardWindow window;
         private CardView card;
 
-        public SearchBox(MainWindow w, CardView c)
+        public SearchBox(CardWindow maindWindow, CardView c)
         {
             InitializeComponent();
-            window = w;
+            window = maindWindow;
             card = c;
         }
 

@@ -13,11 +13,11 @@ namespace card_overview_wpf
     public partial class CardView : System.Windows.Controls.UserControl
     {
         private int cardId;
-        private MainWindow mainWindow;
+        private CardWindow mainWindow;
 
-        public CardView(MainWindow mainWindow)
+        public CardView(CardWindow cardWindow)
         {
-            this.mainWindow = mainWindow;
+            this.mainWindow = cardWindow;
             InitializeComponent();
         }
 

@@ -19,10 +19,8 @@ namespace card_overview_wpf
 
         //Windows
         private DataTable cardTable;
-        private Settings settings;
         private About about;
         private CardWindow cardWindow;
-        private SearchBox searchBox;
 
         private List<List<CardView>> cards;
         private int cols = 1;
@@ -87,17 +85,17 @@ namespace card_overview_wpf
 
                     for (int j = 0; j < rows; j++)
                     {
-                        string card = lines[(rows * i) + j + 2];
-                        CardView cv = new CardView(this);
-                        cv.SetTbBackgroundColor(tbBackgroundColor);
-                        cv.SetTextColor(tbTextColor);
-                        cv.SetImage(int.Parse(card.Split(' ')[0]));
-                        cv.SetVisibility(bool.Parse(card.Split(' ')[1]));
-                        colC.Add(cv);
+                        //string card = lines[(rows * i) + j + 2];
+                        //CardView cv = new CardView(this);
+                        //cv.SetTbBackgroundColor(tbBackgroundColor);
+                        //cv.SetTextColor(tbTextColor);
+                        //cv.SetImage(int.Parse(card.Split(' ')[0]));
+                        //cv.SetVisibility(bool.Parse(card.Split(' ')[1]));
+                        //colC.Add(cv);
 
-                        Canvas.SetLeft(cv, cardWidth * i);
-                        Canvas.SetTop(cv, cardHeight * j);
-                        cardWindow.AddCardView(cv);
+                        //Canvas.SetLeft(cv, cardWidth * i);
+                        //Canvas.SetTop(cv, cardHeight * j);
+                        //cardWindow.AddCardView(cv);
                     }
                     cards.Add(colC);
                 }
@@ -124,14 +122,14 @@ namespace card_overview_wpf
             {
                 cardWindow.Close();
             }
-            if (searchBox != null)
-            {
-                searchBox.Close();
-            }
-            if (settings != null)
-            {
-                settings.Close();
-            }
+            //if (searchBox != null)
+            //{
+            //    searchBox.Close();
+            //}
+            //if (settings != null)
+            //{
+            //    settings.Close();
+            //}
             if (about != null)
             {
                 about.Close();
@@ -168,14 +166,14 @@ namespace card_overview_wpf
 
                 for (int j = 0; j < rows; j++)
                 {
-                    CardView cv = new CardView(this);
-                    cv.SetTbBackgroundColor(tbBackgroundColor);
-                    cv.SetTextColor(tbTextColor);
-                    colC.Add(cv);
+                    //CardView cv = new CardView(this);
+                    //cv.SetTbBackgroundColor(tbBackgroundColor);
+                    //cv.SetTextColor(tbTextColor);
+                    //colC.Add(cv);
 
-                    Canvas.SetLeft(cv, cardWidth * i);
-                    Canvas.SetTop(cv, cardHeight * j);
-                    cardWindow.AddCardView(cv);
+                    //Canvas.SetLeft(cv, cardWidth * i);
+                    //Canvas.SetTop(cv, cardHeight * j);
+                    //cardWindow.AddCardView(cv);
                 }
                 cards.Add(colC);
             }
@@ -236,14 +234,14 @@ namespace card_overview_wpf
             int i = cols - 1;
             for (int j = 0; j < rows; j++)
             {
-                CardView cv = new CardView(this);
-                cv.SetTbBackgroundColor(tbBackgroundColor);
-                cv.SetTextColor(tbTextColor);
-                colC.Add(cv);
+                //CardView cv = new CardView(this);
+                //cv.SetTbBackgroundColor(tbBackgroundColor);
+                //cv.SetTextColor(tbTextColor);
+                //colC.Add(cv);
 
-                Canvas.SetLeft(cv, cardWidth * i);
-                Canvas.SetTop(cv, cardHeight * j);
-                cardWindow.AddCardView(cv);
+                //Canvas.SetLeft(cv, cardWidth * i);
+                //Canvas.SetTop(cv, cardHeight * j);
+                //cardWindow.AddCardView(cv);
             }
             cards.Add(colC);
         }
@@ -273,14 +271,14 @@ namespace card_overview_wpf
             int j = rows - 1;
             for (int i = 0; i < cols; i++)
             {
-                CardView cv = new CardView(this);
-                cv.SetTbBackgroundColor(tbBackgroundColor);
-                cv.SetTextColor(tbTextColor);
-                cards[i].Add(cv);
+                //CardView cv = new CardView(this);
+                //cv.SetTbBackgroundColor(tbBackgroundColor);
+                //cv.SetTextColor(tbTextColor);
+                //cards[i].Add(cv);
 
-                Canvas.SetLeft(cv, cardWidth * i);
-                Canvas.SetTop(cv, cardHeight * j);
-                cardWindow.AddCardView(cv);
+                //Canvas.SetLeft(cv, cardWidth * i);
+                //Canvas.SetTop(cv, cardHeight * j);
+                //cardWindow.AddCardView(cv);
             }
         }
 
@@ -312,8 +310,8 @@ namespace card_overview_wpf
 
             if (!found)
             {
-                settings = new Settings();
-                settings.Show(this);
+                //settings = new Settings();
+                //settings.Show(this);
             }
         }
 
@@ -526,8 +524,8 @@ namespace card_overview_wpf
 
             if (!found)
             {
-                searchBox = new SearchBox(this, cv);
-                searchBox.Show();
+                //searchBox = new SearchBox(this, cv);
+                //searchBox.Show();
             }
         }
     }
