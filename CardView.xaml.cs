@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Data;
-using System.Collections.Generic;
 using System.IO;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Forms;
 
 namespace card_overview_wpf
 {

@@ -3,20 +3,11 @@ using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.OleDb;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace card_overview_wpf
 {
@@ -33,7 +24,6 @@ namespace card_overview_wpf
         private CardWindow cardWindow;
         private SearchBox searchBox;
 
-        private List<List<ButtonControl>> buttons;
         private List<List<CardView>> cards;
         private int cols = 1;
         private int rows = 7;
@@ -87,14 +77,12 @@ namespace card_overview_wpf
                 ClearAll();
 
                 cards = new List<List<CardView>>();
-                buttons = new List<List<ButtonControl>>();
 
                 cols = int.Parse(lines[0]);
                 rows = int.Parse(lines[1]);
 
                 for (int i = 0; i < cols; i++)
                 {
-                    List<ButtonControl> colB = new List<ButtonControl>();
                     List<CardView> colC = new List<CardView>();
 
                     for (int j = 0; j < rows; j++)
@@ -105,20 +93,12 @@ namespace card_overview_wpf
                         cv.SetTextColor(tbTextColor);
                         cv.SetImage(int.Parse(card.Split(' ')[0]));
                         cv.SetVisibility(bool.Parse(card.Split(' ')[1]));
-                        ButtonControl bc = new ButtonControl(cv);
-                        colB.Add(bc);
                         colC.Add(cv);
-
-                        Canvas.SetLeft(bc, 100 * i);
-                        Canvas.SetTop(bc, cardHeight * j);
-                        mainCanvas.Children.Add(bc);
 
                         Canvas.SetLeft(cv, cardWidth * i);
                         Canvas.SetTop(cv, cardHeight * j);
                         cardWindow.AddCardView(cv);
                     }
-
-                    buttons.Add(colB);
                     cards.Add(colC);
                 }
 
@@ -180,12 +160,10 @@ namespace card_overview_wpf
 
             Resize();
 
-            buttons = new List<List<ButtonControl>>();
             cards = new List<List<CardView>>();
 
             for (int i = 0; i < cols; i++)
             {
-                List<ButtonControl> colB = new List<ButtonControl>();
                 List<CardView> colC = new List<CardView>();
 
                 for (int j = 0; j < rows; j++)
@@ -193,20 +171,12 @@ namespace card_overview_wpf
                     CardView cv = new CardView(this);
                     cv.SetTbBackgroundColor(tbBackgroundColor);
                     cv.SetTextColor(tbTextColor);
-                    ButtonControl bc = new ButtonControl(cv);
-                    colB.Add(bc);
                     colC.Add(cv);
-
-                    Canvas.SetLeft(bc, 100 * i);
-                    Canvas.SetTop(bc, cardHeight * j);
-                    mainCanvas.Children.Add(bc);
 
                     Canvas.SetLeft(cv, cardWidth * i);
                     Canvas.SetTop(cv, cardHeight * j);
                     cardWindow.AddCardView(cv);
                 }
-
-                buttons.Add(colB);
                 cards.Add(colC);
             }
         }
@@ -261,7 +231,6 @@ namespace card_overview_wpf
             cols++;
             Resize();
 
-            List<ButtonControl> colB = new List<ButtonControl>();
             List<CardView> colC = new List<CardView>();
 
             int i = cols - 1;
@@ -270,20 +239,12 @@ namespace card_overview_wpf
                 CardView cv = new CardView(this);
                 cv.SetTbBackgroundColor(tbBackgroundColor);
                 cv.SetTextColor(tbTextColor);
-                ButtonControl bc = new ButtonControl(cv);
-                colB.Add(bc);
                 colC.Add(cv);
-
-                Canvas.SetLeft(bc, 100 * i);
-                Canvas.SetTop(bc, cardHeight * j);
-                mainCanvas.Children.Add(bc);
 
                 Canvas.SetLeft(cv, cardWidth * i);
                 Canvas.SetTop(cv, cardHeight * j);
                 cardWindow.AddCardView(cv);
             }
-
-            buttons.Add(colB);
             cards.Add(colC);
         }
 
@@ -293,12 +254,10 @@ namespace card_overview_wpf
             int i = cols - 1;
             for (int j = 0; j < rows; j++)
             {
-                mainCanvas.Children.Remove(buttons[i][j]);
                 cardWindow.RemoveCardView(cards[i][j]);
             }
 
             //Remove column from both lists
-            buttons.RemoveAt(cols - 1);
             cards.RemoveAt(cols - 1);
 
             //Resize
@@ -317,13 +276,7 @@ namespace card_overview_wpf
                 CardView cv = new CardView(this);
                 cv.SetTbBackgroundColor(tbBackgroundColor);
                 cv.SetTextColor(tbTextColor);
-                ButtonControl bc = new ButtonControl(cv);
-                buttons[i].Add(bc);
                 cards[i].Add(cv);
-
-                Canvas.SetLeft(bc, 100 * i);
-                Canvas.SetTop(bc, cardHeight * j);
-                mainCanvas.Children.Add(bc);
 
                 Canvas.SetLeft(cv, cardWidth * i);
                 Canvas.SetTop(cv, cardHeight * j);
@@ -337,11 +290,9 @@ namespace card_overview_wpf
             int j = rows - 1;
             for (int i = 0; i < cols; i++)
             {
-                mainCanvas.Children.Remove(buttons[i][j]);
                 cardWindow.RemoveCardView(cards[i][j]);
 
                 //Remove row from both lists
-                buttons[i].RemoveAt(j);
                 cards[i].RemoveAt(j);
             }
 
