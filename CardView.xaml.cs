@@ -23,12 +23,15 @@ namespace card_overview_wpf
 
         public void Increment()
         {
-            textBoxCount.Text = (int.Parse(textBoxCount.Text) + 1).ToString();
+            if(!modifyMenu.IsEnabled)
+            {
+                textBoxCount.Text = (int.Parse(textBoxCount.Text) + 1).ToString();
+            }
         }
 
         public void Decrement()
         {
-            if (int.Parse(textBoxCount.Text) > 0)
+            if (int.Parse(textBoxCount.Text) > 0 && !modifyMenu.IsEnabled)
             {
                 textBoxCount.Text = (int.Parse(textBoxCount.Text) - 1).ToString();
             }
@@ -64,7 +67,7 @@ namespace card_overview_wpf
             Decrement();
         }
 
-        private void MenuItem_Click_1(object sender, RoutedEventArgs e) //Toggle visibility
+        private void Toggle_Visibility(object sender, RoutedEventArgs e) //Toggle visibility
         {
             if (imageCard.Visibility == Visibility.Visible)
             {
@@ -105,11 +108,24 @@ namespace card_overview_wpf
             }
             catch (FileNotFoundException)
             {
-                System.Windows.MessageBox.Show("Image not found. Please configure the icon location in settings.");
+                MessageBox.Show("Image not found. Please configure the icon location in settings.");
             }
         }
 
-        private void MenuItem_Click(object sender, RoutedEventArgs e) //Select Image
+        public void ToggleContextMenu(bool state)
+        {
+            modifyMenu.IsEnabled = state;
+            if(state)
+            {
+                modifyMenu.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                modifyMenu.Visibility = Visibility.Hidden;
+            }
+        }
+
+        private void Select_Image(object sender, RoutedEventArgs e) //Select Image
         {
             mainWindow.ShowSearchBox(this);
         }

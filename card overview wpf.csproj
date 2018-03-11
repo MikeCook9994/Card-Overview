@@ -143,6 +143,7 @@
     <None Include="fm-cards.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="layouts\default.cof" />
     <None Include="layouts\test.cof">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

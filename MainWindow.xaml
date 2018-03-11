@@ -5,24 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:card_overview_wpf"
         mc:Ignorable="d"
-        Title="Card Overview" Height="300" Width="300" ResizeMode="NoResize" Closing="Window_Closing" Loaded="Window_Loaded"
+        Title="Card Overview" Height="300" Width="255" ResizeMode="NoResize" Closing="Window_Closing" Loaded="Window_Loaded"
         ShowInTaskbar="True">
     <DockPanel>
         <Menu DockPanel.Dock="Top" Height="20">
             <MenuItem Header="Layout">
-                <MenuItem Header="_Open" Click="MenuItem_Click" />
-                <MenuItem Header="_Save" Click="MenuItem_Click_1" />
+                <MenuItem Header="_Open" Click="Open_Layout"/>
+                <MenuItem Header="_Save" Click="Save_Layout"/>
+                <MenuItem Name="modifyMenu" Header="_Modify" IsCheckable="True" Checked="Modify_Layout_Checked" Unchecked="Modify_Layout_Unchecked"/>
             </MenuItem>
-            <MenuItem Header="Columns">
-                <MenuItem Header="Add" Click="MenuItem_Click_2" />
-                <MenuItem Header="Remove" Click="MenuItem_Click_4" />
+            <MenuItem Header="Column">
+                <MenuItem Header="_Add column" Click="Add_Column"/>
+                <MenuItem Header="_Remove Column" Click="Remove_Column"/>
             </MenuItem>
-            <MenuItem Header="Rows">
-                <MenuItem Header="Add" Click="MenuItem_Click_3" />
-                <MenuItem Header="Remove" Click="MenuItem_Click_5" />
+            <MenuItem Header="Row">
+                <MenuItem Header="_Add Row" Click="Add_Row"/>
+                <MenuItem Header="_Remove Row" Click="Remove_Row"/>
             </MenuItem>
-            <MenuItem Header="About" Click="MenuItem_Click_7" />
-            <MenuItem Header="Settings" Click="MenuItem_Click_6" />
+            <MenuItem Header="Settings" Click="Show_Settings_Menu" />
+            <MenuItem Header="About" Click="Show_About_Box" />
+
         </Menu>
         <Canvas Name="mainCanvas" />
     </DockPanel>
